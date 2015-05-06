@@ -2,7 +2,7 @@
   <block type="controls_repeat" id="168" inline="true" x="-39" y="-703">
     <value name="TIMES">
       <block type="math_arithmetic" id="333" inline="true">
-        <field name="OP">DIVIDE</field>
+        <field name="OP">MINUS</field>
         <value name="A">
           <block type="math_random" id="326"></block>
         </value>
