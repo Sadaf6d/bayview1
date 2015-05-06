@@ -43,6 +43,9 @@
                                 </value>
                               </block>
                             </value>
+                            <statement name="DO">
+                              <block type="movement_right" id="273"></block>
+                            </statement>
                           </block>
                         </next>
                       </block>
