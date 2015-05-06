@@ -6,37 +6,29 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_whileUntil" id="131" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="math_random" id="154"></block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="66">
+      <block type="movement_forward" id="66">
+        <next>
+          <block type="robot_delay" id="89" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="99">
+                <field name="NUM">500</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="89" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="99">
-                    <field name="NUM">500</field>
-                  </block>
-                </value>
+              <block type="movement_reverse" id="76">
                 <next>
-                  <block type="movement_reverse" id="76">
-                    <next>
-                      <block type="robot_delay" id="91" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="106">
-                            <field name="NUM">500</field>
-                          </block>
-                        </value>
+                  <block type="robot_delay" id="91" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="106">
+                        <field name="NUM">500</field>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
     <next>
